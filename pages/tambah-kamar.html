@@ -1,0 +1,21 @@
+<section class="content-area">
+  <div class="page-intro"><div class="eyebrow">FORM TRANSAKSI · SOAL 2.C</div><h1>Tambah kamar baru</h1><p>Masukkan informasi kamar sesuai struktur tabel <code>Kamar</code> pada proposal.</p></div>
+  <div class="form-layout">
+    <section class="form-panel">
+      <div class="panel-top"><div><h2>Informasi Kamar</h2><p>Kolom bertanda * wajib diisi.</p></div><span class="panel-tag">Form kamar</span></div>
+      <form id="room-form" novalidate>
+        <div class="form-row">
+          <div class="field"><label for="id_kos">Kos <span>*</span></label><select id="id_kos" name="id_kos" required><option value="">— Pilih nama kos —</option></select><small>Pilih kos tujuan. Nomor kamar hanya perlu unik dalam kos yang sama.</small><p class="field-error" id="error-id_kos"></p></div>
+          <div class="field"><label for="nomor_kamar">Nomor kamar <span>*</span></label><input id="nomor_kamar" name="nomor_kamar" type="text" placeholder="Contoh: A-105" maxlength="20" required><small>Gunakan kode unik, misalnya A-105.</small><p class="field-error" id="error-nomor_kamar"></p></div>
+        </div>
+        <div class="form-row">
+          <div class="field"><label for="harga">Harga per bulan (Rp) <span>*</span></label><input id="harga" name="harga" type="number" placeholder="Contoh: 850000" min="1" step="1" required><small>Masukkan angka tanpa titik atau simbol Rp.</small><p class="field-error" id="error-harga"></p></div>
+          <div class="field"><div class="default-status-note"><strong>✓ Status awal: Tersedia</strong><small>Setelah kamar ditambahkan, ubah statusnya melalui halaman <b>Daftar Kamar</b>.</small></div></div>
+        </div>
+        <div class="form-actions"><button class="btn btn-secondary" type="reset">Reset</button><button class="btn btn-primary" type="submit" id="submit-room">Simpan Kamar <span aria-hidden="true">→</span></button></div>
+        <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <aside class="info-panel"><div class="info-illustration" aria-hidden="true">⌂</div><h3>Petunjuk pengisian</h3><p>Isi semua data kamar dengan benar sebelum menyimpannya.</p><ul><li>Nomor kamar harus unik dalam satu kos.</li><li>Harga harus berupa bilangan positif.</li><li>Status kamar baru otomatis <strong>Tersedia</strong>.</li><li>Ubah status menjadi Terisi / Perbaikan di menu Daftar Kamar.</li><li>ID kamar dibuat otomatis oleh JavaScript.</li></ul><div class="info-foot">Form divalidasi oleh JavaScript. Data disimpan secara lokal di browser tanpa dikirim ke server.</div></aside>
+  </div>
+</section>

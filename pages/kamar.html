@@ -1,0 +1,16 @@
+<section class="content-area">
+  <div class="page-intro page-intro-row"><div><div class="eyebrow">KONTEN INTERAKTIF · SOAL 2.B</div><h1>Daftar kamar kos</h1><p>Pilih nama kos terlebih dahulu, kemudian lihat, cari, dan perbarui kamar khusus kos tersebut.</p></div><button class="btn btn-primary" data-go-page="tambah-kamar" type="button">＋ Tambah Kamar</button></div>
+  <section class="kos-picker-panel" aria-label="Pilih kos sebelum melihat kamar">
+    <div class="kos-picker-description"><span class="kos-step">LANGKAH 1</span><h2>Pilih nama kos</h2><p>Daftar kamar akan muncul setelah kamu memilih salah satu kos.</p></div>
+    <div class="kos-picker-control"><label for="select-kos-list">Nama kos <span aria-hidden="true">*</span></label>
+      <select id="select-kos-list" required><option value="">— Pilih nama kos dahulu —</option></select></div>
+  </section>
+  <div class="kos-prompt" id="kos-prompt"><span class="prompt-icon" aria-hidden="true">⌂</span><strong>Belum ada kos yang dipilih</strong><p>Silakan pilih nama kos di atas untuk menampilkan daftar kamar dan mengubah status kamar.</p></div>
+  <section class="table-panel" id="room-table-panel" aria-label="Daftar kamar" hidden>
+    <div class="panel-top"><div><h2>Data Kamar</h2><p id="room-count">Memuat data kamar...</p></div><span class="panel-tag" id="selected-kos-name">Nama kos</span></div>
+    <div class="filter-bar"><label class="search-input"><span aria-hidden="true">⌕</span><span class="sr-only">Cari nomor kamar</span><input id="search-room" type="search" placeholder="Cari nomor kamar…" autocomplete="off"></label><label class="select-wrap"><span class="sr-only">Filter status</span><select id="filter-status"><option value="semua">Semua status</option><option value="tersedia">Tersedia</option><option value="terisi">Terisi</option><option value="perbaikan">Perbaikan</option></select></label></div>
+    <div class="table-scroll"><table><thead><tr><th>ID Kamar</th><th>Nomor Kamar</th><th>Harga / bulan</th><th>Status Saat Ini</th><th>Nama Kos</th><th>Ubah Status Kamar</th></tr></thead><tbody id="room-body"><tr><td colspan="6" class="empty">Memuat data…</td></tr></tbody></table></div>
+    <div class="table-bottom"><small>Data kamar dibaca dari localStorage. Navigasi halaman memakai Fetch API (Ajax).</small><span id="view-count"></span></div>
+  </section>
+  <p class="help-note"><strong>Cara ubah status:</strong> pada kamar yang ingin diperbarui, pilih <b>Tersedia</b>, <b>Terisi</b>, atau <b>Perbaikan</b> lalu klik <b>Simpan</b>. Perubahan disimpan di browser; daftar dan statistik dashboard ikut berubah.</p>
+</section>

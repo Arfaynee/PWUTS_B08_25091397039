@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dashboard manajemen kamar Sistem Informasi Kos">
+  <title>KosKita | UTS Farhan - Manajemen Kamar Kos</title>
+  <!-- Tampilan memakai CSS murni (tanpa Bootstrap, Tailwind, atau jQuery). -->
+  <link rel="stylesheet" href="assets/css/style.css?v=farhan-lokal-20261026">
+  <!-- Interaksi menggunakan JavaScript native: Fetch API, DOM, History API. -->
+  <script src="assets/js/app.js?v=farhan-lokal-20261026" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navigasi utama">
+      <a href="index.html" class="brand" aria-label="KosKita beranda">
+        <span class="brand-icon" aria-hidden="true">⌂</span>
+        <span><strong>KosKita</strong><small>Manajemen Kos</small></span>
+      </a>
+      <div class="workspace-label">WORKSPACE</div>
+      <nav class="side-nav" id="main-nav">
+        <a class="nav-link active" data-page="beranda" href="pages/beranda.html"><span aria-hidden="true">◫</span> Dashboard</a>
+        <a class="nav-link" data-page="kamar" href="pages/kamar.html"><span aria-hidden="true">▦</span> Daftar Kamar</a>
+        <a class="nav-link" data-page="tambah-kamar" href="pages/tambah-kamar.html"><span aria-hidden="true">＋</span> Tambah Kamar</a>
+      </nav>
+      <div class="sidebar-note">
+        <strong>Panel Pemilik Kos</strong>
+        <p>Kelola informasi kamar dalam satu tempat.</p>
+      </div>
+      <div class="sidebar-footer"><span class="online-dot"></span> UTS Farhan • 2025B</div>
+    </aside>
+
+    <div class="main-wrap">
+      <header class="topbar">
+        <div class="topbar-start">
+          <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false">☰</button>
+          <div class="breadcrumbs">Sistem Informasi Kos <span>/</span> <b id="current-label">Dashboard</b></div>
+        </div>
+        <div class="topbar-end"><span class="top-date" id="today-date"></span><span class="avatar" title="Mode demo Pemilik Kos">PK</span><span class="owner-text">Pemilik Kos <small>Mode demonstrasi</small></span></div>
+      </header>
+      <main id="app" tabindex="-1" aria-live="polite"><div class="loading">Memuat halaman…</div></main>
+      <footer class="page-footer">KosKita • Farhan Bagas Firmansyah • 25091397039 • UTS Pemrograman Web 2026/2027</footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
