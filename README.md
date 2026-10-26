@@ -75,7 +75,7 @@ Validasi menggunakan JavaScript. Saat berhasil disimpan, **status kamar baru oto
 1. Jadikan file 1 folder lalu taruh folder itu ke `C:\xampp\htdocs\`.
 2. Buka XAMPP Control Panel dan jalankan **Apache**. **MySQL tidak perlu dinyalakan.**
 3. Buka browser dan kunjungi:
-   http://localhost/(NAMA FOLDER)/
+   http://localhost/(NAMAFOLDER)/
 
 **Jangan jalankan `index.html` dengan mengklik file secara langsung (`file://`)**, karena navigasi Ajax dengan `fetch()` memerlukan alamat HTTP.
 
